@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css?family=Chicle|Merriweather|Playfair+Display");
+
+* {
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+
+}
+
+h1{
+  font-size: 2em;
+}
+
+body{
+
+  text-align: center;
+  margin: 0;
+  font-family:'Playfair+Display', sans-serif;
+
+
+/* header
+***************************/
+}
+
+header{
+  position: absolute;
+  font-weight: 500;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background: grey;
+  opacity: 0.8;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: grey;
+
+}
+
+/*Add some top padding to the page content to prevent sudden quick movement
+ (as the header gets a new position at the top of the page
+ (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*
+nav ul {
+  margin:1em;
+  padding: 0;
+  text-align: right;
+
+}
+
+nav li{
+  display: inline-block;
+  text-decoration: none;
+
+
+}
+
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: .5rem;
+  color: #000000;
+  font-weight: bolder;
+
+
+
+}
+
+nav input{
+
+   padding: 6px;
+   border: none;
+   margin-top: 8px;
+   margin-right: 16px;
+   font-size: 17px;
+}
+
+*/
+
+
+.search{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+
+}
+/*.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  */
+
+.topnav{
+  width: 100%;
+
+}
+
+.topnav a{
+  float: left;
+  display: inline-block;
+  color: #000000;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav .icon{
+  display: none;
+}
+
+
+
+
+
+/* Header Background
+***************************/
+.Tagline{
+  background-image: url("Pictures/trasnparent header.png");
+  padding: 12em 2em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Tagline h1{
+  color: white;
+  font-weight: 100;
+  font-size: 2.5em;
+  letter-spacing: 0.5;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: "Merriweather",sans-serif;
+}
+
+/*@media screen and (max-width:600px){
+  .topnav a:not(:first-child){display: none;}
+  .topnav a.icon{
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+
+  }
+}
+*/
+
+/* About section
+**************************************/
+
+.home-about{
+  background-image: url("Pictures/transparent text box image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  outline: 1px;
+  color: navy;
+  height: 150%;
+  top: 0;
+  bottom: 0;
+  padding: 1em;
+  padding-bottom: 24em;
+  margin-right: 3em;
+
+
+}
+
+.home-about p{
+  padding-top: 2em;
+}
+
+.me img{
+  float: left;
+  height: 22em;
+  width: 28%;
+  margin: 4em;
+  top: 0;
+  bottom: 0;
+
+}
+
+.gif img{
+  margin: 3em;
+  float: right;
+  left: 10em;
+  border-radius: 30%;
+
+
+}
+
+
+@media screen and (max-width: 600px){
+  .home-about h1{
+    font-size: 25px;
+  }
+
+.home-about h1{
+  font-style: oblique;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 100;
+}
+
+.home-about p{
+  font-family: "Merriweather", sans-serif;
+  font-size: 1em;
+  padding: 1rem;
+}
+}
+
+
+/* Portfolio section
+********************************/
+
+.portfolio-button{
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-width: 1.5px;
+  border-style: solid;
+  padding: 0.5em;
+  font-size: 0.8rem;
+  border-radius: 10%;
+
+}
+
+.button-accent{
+  color: #00ff6c;
+  border-color:#00ff6c;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background: #00ff6c;
+  color: #232223;
+}
+
+.portfolio-item{
+  margin: 0;
+  position: relative;
+}
+
+.port-discrp p{
+  color: white;
+}
+
+figure{
+  margin: 0;
+}
+
+#projects{
+  margin: 3em 0;
+}
+
+.port-discrp{
+  position: absolute;
+  z-index: 100;
+  left: 3em;
+  right: 3em;
+  bottom: 2em;
+  padding-bottom: 1em;
+  background: rgba(0,0,0,.75);
+  overflow: hidden;
+
+}
+
+.portfolio-item img{
+  display: block;
+}
+
+@media (min-width: 37em) {
+  .portfolio-item{
+    width: 50%;
+    float: left;
+  }
+  .port-discrp{
+    padding: 0.004;
+  }
+}
+
+
+
+@media (min-width: 60rem) {
+  .portfolio-item{
+    width: 33.333333%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .port-discrp{
+    transform: translateY(150%);
+  }
+
+  .portfolio-item:hover .port-discrp {
+    transform: translateY(0);
+  }
+}
+
+footer h1{
+  padding-bottom: 0.5em;
+  }
+
+footer{
+  clear: both;
+  padding-top: 10em;
+
+
+
+}
+
+
+
+.icons img{
+  width: 100px;
+  padding: 1em;
+}
+
+@media screen and (max-width: 600px){
+  .icons img{
+    width: 30%;
+    padding-bottom: 3em;
+  }
+  footer{
+    padding-top: 2em;
+
+  }
+  .info{
+    padding-top: 1.5em;
+  }
+}
+
+.info{
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.info a{
+
+  display: inline-block;
+  color: #000000;
+  text-align: right;
+  text-decoration: none;
+  font-size: 17px;
+
+}

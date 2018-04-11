@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cogniza</title>
+  </head>
+
+
+  <body>
+    <header>
+        <div class="topnav" id="myNavbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+  <!--      <a href="">Blog</a>
+  -->
+  <script>
+  window.onscroll = function() {myFunction()};
+  var fixedHeader = document.getElementById("myNavbar");
+
+  // Get the offset position of the navbar
+  var sticky = fixedHeader.offsetTop;
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+  fixedHeader.classList.add("sticky");
+  } else {
+  fixHeader.classList.remove("sticky");
+  };
+  };
+  </script>
+
+<!--
+
+
+
+
+
+        <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
+
+
+        <input id="hiddenquery" type="hidden" name="q" />
+        <input name="qfront" type="text" style="width: 200px" /> <input type="submit" value="Search" /><br />
+        <div style="font: bold 11px Verdana;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
+        </div>
+
+        <script type="text/javascript">
+
+        // All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+        // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+        // This notice must stay intact for use
+
+        //Enter domain of site to search.
+
+
+        var searchaction=[ //form action for the 3 search engines
+        "http://www.google.com/search",
+        "http://search.yahoo.com/search",
+        "http://search.msn.com/results.aspx"
+        ]
+
+        var queryfieldname=["q","p","q"] //name of hidden query form for the 3 search engines
+
+        function switchaction(cur, index){
+        cur.form.action=searchaction[index]
+        document.getElementById("hiddenquery").name=queryfieldname[index]
+        }
+
+        function jksitesearch(curobj){
+        for (i=0; i< document.jksearch.se.length; i++){ //loop through radio to see which is checked
+        if (document.jksearch.se[i].checked==true)
+        switchaction(document.jksearch.se[i], i)
+        }
+        document.getElementById("hiddenquery").value=curobj.qfront.value
+        }
+
+
+        </script>
+
+        </p>
+
+        </form>
+<!--
+
+        <div class = "search">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+   </form>
+
+-->
+
+
+<!--        <a href="javascript:void(0);"style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <input type="text" placeholder="Search..">
+      </div>
+
+-->
+
+
+
+
+<!-- Work on code for drop down menu -->
+<!--
+      <script>
+      var myFunction = function(){
+        var menu = document.getElementById("myNavbar");
+        if (menu.className === "topnav"){
+          menu.className += "responsive";
+        }
+
+        else {
+          menu.className = "topnav";
+        }
+      }
+      </script>
+
+    -->
+
+    </header>
+<!-- might use it later
+      <nav>
+        <ul style="list-style-type:none">
+
+          <li><a href="">Projects</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><input type="text" placeholder="Search..."></li>
+        </ul>
+      </nav>
+    </header>
+-->
+
+    <section class = "Tagline">
+
+      <h1>What you create<br> can change the world<br>
+        <span>Designing the future</span>
+    </h1>
+  </section>
+
+
+  <div class = "container">
+    <div class = "me">
+      <img src = "Pictures/me.jpg" alt="trinesh">
+    </div>
+    <section id="about">
+      <div class = "home-about">
+        <h1>About </h1>
+        <p>Growing up in the Mother City, South Africa, diverse in all its beauty and culture, the most fundamental aspect in life you learn is that of community and community-building. I feel that its something thats needed in todays globally connected world.
+            I have always been curious by nature, having developed an aptitude for Music at an early age, I realised that the universality of melodies, the art of expressing yourself through this medium can change the world<br>
+            I started off with Piano and guitar, then violin and drums. Other ideas i've spent a considerable time thinking about is the questions of life and the nature of reality and consciousness. All this idea pondering led me to Artifiical Intelligence.
+          </p>
+
+          <p>The Wikipedia Definition is:<br><br>
+
+            "Artificial intelligence (AI, also machine intelligence, MI) is intelligence demonstrated by machines, in contrast to the natural intelligence (NI) displayed by humans and other animals. In computer science AI research<br>
+            is defined as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals."<br><br>
+            At the moment i'm studying AI. My goals are to continue to learn and work on some of the gloabal problems i'm in intersted in - Transportation and Ecological Sustaibility.
+    </p>
+    <div class = "gif">
+      <img src = "https://media.giphy.com/media/qVDkVk4xo0q0U/giphy.gif" alt= "piano">
+
+  </div>
+</section>
+</div>
+
+
+
+<!--Porfolio -->
+
+<section id="projects">
+  <h1>Projects</h1>
+
+<!-- Portfolio item 1 -->
+  <figure class="portfolio-item">
+    <img src="Pictures/Basic webpage grab.jpg" alt="portfolio1">
+    <figcaption class = "port-discrp">
+      <p>Basic Webpage</p>
+      <a href="https://trinesh1996.github.io/basic-webpage-portfolio/." class="portfolio-button button-accent">Project Details</a>
+      <p>This Webpage uses basic Html and CSS. You will find some information on historical landmarks in the City of Cape Town, as well as the city of Florence, Italy.
+      </p>
+    </figcaption>
+  </figure>
+
+  <!-- Portfolio item 2 -->
+    <figure class="portfolio-item">
+      <img src="Pictures/skeleton code1.png" alt="portfolio2">
+      <figcaption class = "port-discrp">
+        <p>Basic Webpage with skeleton framework</p>
+        <a href="https://trinesh1996.github.io/skeleton-framework/" class="portfolio-button button-accent">Project Details</a>
+        <p>This Webpage uses basic Html and Skeleton CSS framework. You will find some information on historical landmarks in the City of Cape Town, as well as the city of Florence, Italy.
+        </p>
+      </figcaption>
+    </figure>
+
+    <!-- Portfolio item 3 -->
+      <figure class="portfolio-item">
+        <img src="Pictures/TDD resize.jpg" alt="portfolio3">
+        <figcaption class = "port-discrp">
+          <p>Test Driven Development</p>
+          <a href="https://trinesh1996.github.io/Bootcamp-test/" class="portfolio-button button-accent">Project Details</a>
+          <p>This page directs you to unit tests that were completed for the CodeX Bootcamp Exercises. It contains tests done on basic functions, loop, and object exercises.</p>
+        </figcaption>
+      </figure>
+
+    </section>
+
+
+
+
+  <div id="contact">
+    <footer>
+      <div class = "icons">
+        <a href="https://twitter.com/FC_RecordsSA"><img src="Icons/square-twitter-128.png"/></a>
+        <a href="https://www.instagram.com/trineshchetty"><img src="Icons/instagram-colourful-icon.png"/></a>
+        <a href="https://github.com/Trinesh1996"><img src="Icons/github.png"/></a>
+        <a href="https://soundcloud.com/dj-trinity1997"><img src="Icons/social-Soundcloud-Icon.png"/></a>
+        <a href="https://www.linkedin.com/in/trinesh-chetty-719678136/"><img src="Icons/Linkedin_icon.svg.png"/></a>
+
+      </div>
+
+<div class= "info">
+      <h1>Contact</h1>
+      <p>For more information on upcoming projects subscibe to our News Letter.<br>
+        You can also follow us on social media :)
+      </p>
+
+      <ul style="list-style-type:none">
+        <li><a href ="https://twitter.com/FC_RecordsSA">Twitter</li>
+        <li><a href="https://www.instagram.com/trineshchetty/">Instagram</li>
+        <li><a href ="https://github.com/Trinesh1996">GitHub</li>
+        <li><a href = "https://soundcloud.com/dj-trinity1997">Sound Cloud</li>
+        <li><a href="https://www.linkedin.com/in/trinesh-chetty-719678136">Linkedin</li>
+      </ul>
+    </div>
+</footer>
+</div>
+      </body>
+</html>

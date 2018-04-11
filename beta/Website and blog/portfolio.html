@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cogniza</title>
+  </head>
+
+
+  <body>
+    <header>
+        <div class="topnav" id="myNavbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="">Blog</a>
+        <a href="javascript:void(0);"style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <input type="text" placeholder="Search..">
+      </div>
+<!-- Work on code for drop down menu -->
+      <script>
+      var myFunction = function(){
+        var menu = document.getElementById("myNavbar");
+        if (menu.className === "topnav"){
+          menu.className += "responsive";
+        }
+
+        else {
+          menu.className = "topnav";
+        }
+      }
+      </script>
+
+      <script>
+      window.onscroll = function() {myFunction()};
+      var fixedHeader = document.getElementById("myNavbar");
+
+// Get the offset position of the navbar
+var sticky = fixedHeader.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    fixedHeader.classList.add("sticky");
+  } else {
+    fixHeader.classList.remove("sticky");
+  };
+};
+</script>
+
+    </header>
+<!-- might use it later
+      <nav>
+        <ul style="list-style-type:none">
+
+          <li><a href="">Projects</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><input type="text" placeholder="Search..."></li>
+        </ul>
+      </nav>
+    </header>
+-->
+
+    <section class = "Tagline">
+
+      <h1>What you create<br> can change the world<br>
+        <span>Designing the future</span>
+    </h1>
+  </section>
+
+
+  <div class = "container">
+    <div class = "me">
+      <img src = "Pictures/me.jpg" alt="trinesh">
+    </div>
+    <section id="about">
+      <div class = "home-about">
+        <h1>About </h1>
+        <p>Trinesh Chetty stays in Cape Town, commonly refered to as the Mother City of South Africa and home to the beautiful Table Mountain.<br>
+      his main interest lie in Artificical Intelligence. Having started a career in web and software development he aims to contribute to the field of AI.<br>
+      Having a passion for music, he studied Music and Sound Design at Cape Audio College, graduating in 2017. He's a producer and Sound Designer by nature, having produced for many local up-and-coming artists in South Africa.
+    </p>
+  </div>
+</section>
+</div>
+
+
+
+<!--Porfolio -->
+
+<section id="projects">
+  <h1>Projects</h1>
+
+<!-- Portfolio item 1 -->
+  <figure class="portfolio-item">
+    <img src="Pictures/basic webpage resize.png" alt="portfolio1">
+    <figcaption class = "port-discrp">
+      <p>Basic Webpage</p>
+      <a href="" class="portfolio-button button-accent">Project Details</a>
+    </figcaption>
+  </figure>
+
+  <!-- Portfolio item 2 -->
+    <figure class="portfolio-item">
+      <img src="Pictures/skeleton resize.jpg" alt="portfolio2">
+      <figcaption class = "port-discrp">
+        <p>Basic Webpage with skeleton framework</p>
+        <a href="" class="portfolio-button button-accent">Project Details</a>
+      </figcaption>
+    </figure>
+
+    <!-- Portfolio item 3 -->
+      <figure class="portfolio-item">
+        <img src="Pictures/TDD resize.jpg" alt="portfolio3">
+        <figcaption class = "port-discrp">
+          <p>Test Driven Development</p>
+          <a href="" class="portfolio-button button-accent">Project Details</a>
+        </figcaption>
+      </figure>
+
+    </section>
+
+  <div id="contact">
+    <footer>
+      <div class = "icons">
+        <img src = "Icons/256px-Facebook_icon.svg.png" alt="facebook">
+        <img src = "Icons/square-twitter-128.png" alt="twitter">
+        <img src = "Icons/instagram-colourful-icon.png" alt="instagram">
+        <img src = "Icons/github.png" alt="github">
+        <img src = "Icons/social-Soundcloud-Icon.png" alt="soundcloud">
+      </div>
+
+<div class = "info">
+      <h1>Contact</h1>
+      <p>For more information on upcoming projects subscibe to our News Letter.<br>
+        You can also follow us on social media :)
+      </p>
+
+      <ul style="list-style-type:none">
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>GitHub</li>
+        <li>Sound Cloud</li>
+      </ul>
+    </div>
+</footer>
+</div>
+      </body>
+</html>
